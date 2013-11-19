@@ -1,3 +1,4 @@
+$(window).load(function(){
 var opts = {
   lines: 15, // The number of lines to draw
   length: 50, // The length of each line
@@ -18,3 +19,4 @@ var opts = {
 };
 var spinner = new Spinner(opts).spin();
 $("#foo").append(spinner.el);
+});
