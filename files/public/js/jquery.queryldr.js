@@ -25,21 +25,21 @@ $(document).ready(function () {
         completeAnimation: "grow"
     });
 });
-/*
+</script>
+*To make it work for iOS devices ADD SCRIPT:
+<script type="text/javascript">
 window.addEventListener('DOMContentLoaded',function() {
     $("body").queryLoader2({
-        barColor: "#6e6d73",
+        barColor: "#3C6787",
         backgroundColor: "#ffffff",
         percentage: true,
         barHeight: 30,
         completeAnimation: "grow"
     });
 });
+</script>
 *
 */
-</script>
-
- */
 (function($){function OverlayLoader(parent) {
 	this.parent = parent;
 	this.container;
