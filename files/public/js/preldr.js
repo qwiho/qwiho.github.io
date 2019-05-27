@@ -86,7 +86,10 @@ $(document).ready(function () {
 
     //Error handling - When image fails to load we will remove the mask & shows the page. 
     function imgError (arg) {
-        $('#loaderMask').html("<span style='font-size: 11px;'>A element failed to load...</span><div id='qLbar' style='height: 30px; margin-top: -15px; background-color: #3C6787; width: "+percentage + "%; position: absolute; top: 50%; min-width: 0%; overflow: hidden;'></div>").delay(510).fadeOut(100, function(){
+		/*$('#loaderMask').html("<span style='font-size: 11px;'>A element failed to load...</span><div id='qLbar' style='height: 30px; margin-top: -15px; background-color: #3C6787; width: "+percentage + "%; position: absolute; top: 50%; min-width: 0%; overflow: hidden;'></div>").delay(510).fadeOut(100, function(){
+            $('#loaderMask').remove();
+        })*/
+        $('#loaderMask').html("<span style='font-size: 11px;'>...</span><div id='qLbar' style='height: 30px; margin-top: -15px; background-color: #3C6787; width: "+percentage + "%; position: absolute; top: 50%; min-width: 0%; overflow: hidden;'></div>").delay(510).fadeOut(100, function(){
             $('#loaderMask').remove();
         })
     }
